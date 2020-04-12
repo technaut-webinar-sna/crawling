@@ -18,11 +18,11 @@ retweet <- TRUE
 
 # Autentifikasi API
 token <- create_token(
-  app = "SMA Workshop 2",
-  consumer_key = "8c6g53lSeupE2anReETTs2vys",
-  consumer_secret = "OltZDimReEajo9AEBAsAPqf78yyNzfrmH85aJzUzpqjAsH4Nxf",
-  access_token = "201094280-dsxUFTbrXldpm8YjkziHqkmFqCkF9aRH4lLvq1oE",
-  access_secret = "VBpKAHnNCQjGjRpCLsrHROHufWX8tEbP3EAYblbYKNv5c")
+  app = "xxxxxxxxxx",
+  consumer_key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  consumer_secret = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  access_token = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  access_secret = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
 
 # Mencari tweet
 crawling <- search_tweets(keyword,
