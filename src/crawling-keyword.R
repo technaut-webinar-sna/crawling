@@ -9,8 +9,9 @@ library("dplyr")
 library("tidyr")
 
 # Set keword dan jumlah tweet yang akan dicari
-keyword <- "masker"
+keyword <- "tvri"
 jumlahtweet <- 1000
+type <- "recent"
 bahasa <- "id"
 
 # Bila ingin Mengambil Retweet tuliskan "TRUE", bila tidak tuliskan "FALSE"
@@ -18,16 +19,17 @@ retweet <- TRUE
 
 # Autentifikasi API
 token <- create_token(
-  app = "xxxxxxxxxx",
-  consumer_key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-  consumer_secret = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-  access_token = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-  access_secret = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
+  app = "xxxxxxxxxxxx",
+  consumer_key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  consumer_secret = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  access_token = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  access_secret = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
 
 # Mencari tweet
 crawling <- search_tweets(keyword,
                           n = jumlahtweet,
                           include_rts = retweet,
+                          type = type,
                           lang = bahasa,
                           retryonratelimit = FALSE)
 
